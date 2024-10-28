@@ -14,7 +14,7 @@ const Menu = () => {
   const [open,setOpen]=useState(false)
   // temporary
   const user=false;
-  console.log(open);
+  
   return (
     <div>
       {!open ? (<Image src="/open.png" alt='' width={20} height={20}  onClick={()=>setOpen(true)}/>) 
