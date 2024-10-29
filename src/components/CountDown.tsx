@@ -46,7 +46,7 @@ const CountDown = () => {
     }, 1000);
 
     return () => clearInterval(timer); // Clear the timer on unmount
-  }, []); // Run once on mount
+  }, [calculateTimeLeft]); // Run once on mount
 
   return (
     <span className="font-bold text-5xl text-yellow-300">
